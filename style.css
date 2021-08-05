@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+#main{
+    overflow: hidden;
+}
+
+/* chung */
+.mg{
+    margin: 0 15px;
+}
+.width-half{
+    width: 50%;
+}
+.fl{
+    float: left;
+}
+/* chung */
+#header{
+    
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+   
+}
+.menu {
+    display: inline-block;
+}
+.menu > li{
+    list-style: none;
+    display:inline-block ;
+    position: relative;
+    
+    
+}
+.menu .menu-arrow 
+{
+    font-size: 11px;
+}
+
+.menu > li >a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 46px;
+    padding: 0px 10px;
+   
+    
+}
+.menu  >li:hover >a{
+    background-color: whitesmoke;
+    color: black;  
+}
+.menu .submenu 
+{
+    display: none;
+    position:absolute;
+    top:44px;
+    left: -20px;
+    
+}
+.submenu{
+    list-style: none;
+}
+.submenu li a{
+    text-decoration: none;
+    min-width:150px;
+    color:black;
+    display:inline-block;
+    padding: 0 20px;
+    line-height: 40px;
+}
+.menu li:hover .submenu
+{
+    display: block;
+    background-color: whitesmoke;
+    color: black;  
+}
+.menu .submenu li:hover a{
+    background-color:#ccc;
+     
+}
+
+#header .find{
+  float: right;
+  padding: 0 19px;
+  
+  
+}
+#header .find:hover
+{
+    background-color:#f44336 ;
+    cursor: pointer;
+}
+#header .menu-moblie-btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0 19px;
+    display: none;
+}
+#header .menu-moblie-btn:hover{
+    background-color: #ccc;
+    
+}#header .menu-moblie-btn:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
+#header .search{
+    color: #fff;
+    font-size: 20px;
+    line-height: 44px;
+  
+}
+#slider{
+    margin-top: 44px;
+    background-image: url('/assets/img/img1.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position:top  center;
+    padding-top: 50%;
+    
+}
+#slider .slider-text
+{
+     color: white;
+    position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+    
+}
+.slider_2
+{
+    margin: 35px;
+    
+}
+#content .content-heading{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    
+}
+#content .select-heading{
+    font-size: 500;
+    margin: 10px;
+    letter-spacing: 0.3rem;
+    text-align: center;
+
+}
+#content .select-slogan{
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px;
+    text-align: center;
+}
+#content .sub-heading
+{
+    text-align: justify;
+    line-height: 1.4;
+    padding-right: 5px;
+}
+#content .content-img
+{
+    padding: 47px;
+    text-align: center;
+}
+#content .name-img
+{
+    font-size: 15px;
+    margin: 15px;
+}
+
+#content .img
+{
+    float: left;
+    width: 33.3333%;
+
+}
+#content .anh
+{
+    width: 154px;
+    border-radius: 4px;
+}
+ .clear
+{
+    clear: both;
+}
+.tour-dates{
+    background-color: black;
+    color: #ffff;
+}
+.tickets-list{
+    background-color: #ffff;
+    margin-top: 40px;
+   
+}
+
+.tickets-list li{
+    color: #757575;
+    padding: 8px 16px;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    margin-top: 3px;
+}
+.sold-out{
+    background-color:#f44336 ;
+    margin-left: 16px;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 15px;
+}
+.span-quanity
+{
+    float: right;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 16px;
+    color: #fff;
+    display: block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    line-height: 24px;
+
+}
+.list-place{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+.dsc-place{
+    width: 33.3333%;
+    float: left;
+    color: #000;
+    padding: 0 8px;
+    
+}
+.img-place{
+    width: 100%;
+    display: block;
+}
+.img-place:hover{
+    opacity: 0.5;
+}
+.place{
+    padding: 0 16px;
+    font-size: 15px;
+    background-color: #fff;
+    display: inline-block;
+}
+.btn-tickets{
+    background-color: #000;
+    margin-bottom: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 0 16px;
+    display: inline-block;
+}
+.dsc-place1{
+    margin: 15px 0;
+}
+.lplace{
+    margin: 15px 0;
+}
+.day{
+    margin: 15px 0;
+    color: #757575;
+}
+.btn-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.contact-item{
+    margin-top: 47px;
+}
+
+.contact-icons{
+    width: 50%;
+    float: left;
+  
+}
+.contact-icons::after{
+    clear: both;
+}
+
+.contact-form{
+    width: 50%;
+    float: left;
+    
+}
+.name{
+    width: 48.9%;
+    border: 1px solid #ccc;
+    padding: 8px;
+   
+
+}
+.email{
+    width: 49.9%;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.message{
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 11px;
+}
+.button{
+    background-color: #000;
+    color: #ffff;
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+.button:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.icon{
+    display: inline;
+    margin-left: 5px;
+}
+.map{
+ width: 100%;
+}
+
+
+.footer-content{
+    font-size: 22px;
+    opacity: 0.6;
+    margin: 64px 0;
+    text-align: center;
+}
+
+.footer-text{
+    margin-top: 10px;
+    font-size: 15px;
+}
+/* mobile */
+@media (max-width: 740px) {
+    #header{
+        overflow: hidden;
+    }
+    .menu > li{
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+    .menu >li:first-child{
+        display: inline-block;
+    }
+    .menu > li >a{
+        display: block;
+    }
+    #header .find{
+        display: none;
+    }
+    #header .menu-moblie-btn{
+           display: block;
+    }
+    .menu .submenu{
+        position: initial;
+    }
+    .submenu li{
+        background-color: #757575;
+        
+    }
+    .submenu li a{
+        color: #fff;
+        display: block;
+        padding: 2px 26px
+    }
+    #content .img{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #content .anh{
+        width: 60%;
+    }
+    .dsc-place{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-icons{
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+        margin-top: 16px;
+    }
+    .contact-form  .name,
+    .contact-form  .email{
+        width: 100%;
+    }
+}
